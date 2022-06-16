@@ -28,4 +28,9 @@ public class SettingsMenu : MonoBehaviour
     {
         settedAduio.SetFloat("volume", volume); //have to use on tag, value
     }
+
+    public void gameQuit()
+    {
+        Application.Quit();
+    }
 }
