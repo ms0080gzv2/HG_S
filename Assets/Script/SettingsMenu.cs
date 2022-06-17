@@ -33,4 +33,34 @@ public class SettingsMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void pause()
+    {
+        bool pauseEnabled = false;
+        if(Input.GetKeyDown("escape"))
+        {
+ 
+            //check if game is already paused
+            if(pauseEnabled == true)
+            {
+                //unpause the game
+                pauseEnabled = false;
+                Time.timeScale = 1;
+                AudioListener.volume = 1;
+                Screen.showCursor = false;
+            }
+ 
+            //else if game isn't paused, then pause it
+            else if(pauseEnabled == false)
+            {
+                pauseEnabled = true;
+                AudioListener.volume = 0;
+                Time.timeScale = 0;
+                Screen.showCursor = true;
+            }
+        }
+
+    }
+
+
 }
