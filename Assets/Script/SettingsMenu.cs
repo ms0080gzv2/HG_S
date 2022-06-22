@@ -23,6 +23,12 @@ public class SettingsMenu : MonoBehaviour
         Screen.fullScreen = isFullScreen;
     }
 
+    public void funciotnfotest()
+    {
+        int a = 0;
+
+    }
+
     public AudioMixer settedAduio;
     public void SetVolume(float volume)
     {
