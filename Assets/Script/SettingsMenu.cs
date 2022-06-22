@@ -18,6 +18,10 @@ public class SettingsMenu : MonoBehaviour
     }
     //END
 
+    //test GG
+
+    System.Console.WriteLine(GG);
+
     public void SetFullScreen(bool isFullScreen)
     {
         Screen.fullScreen = isFullScreen;
